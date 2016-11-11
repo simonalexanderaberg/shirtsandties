@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="115ae4ee-0fce-4527-8eb3-b18506c68b95" name="UMLUseCaseDiagram1" linkedPackageId="5e4facca-aa10-42e2-8b30-cf3d5bede136" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="79575c16-71b9-467c-ab1b-8f93dc4b24ee">
+      <profileInstance Id="42b57f42-489e-4902-862b-4377b794f3d4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="15de0126-aa44-4ab5-bfee-25f5e8f73091">
+      <profileInstance Id="ca0b278a-1dc2-4bf7-b123-b1099c1f782e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" name="ShirtsAndTies Web Store" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a8c6f39a-bca0-49e0-94cb-d0303e2a3c77" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4a9f3aa3-13cf-419e-aad3-8aed4c0ce4da" name="Buyer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5cfd1af-d233-4a25-9485-b8e50f876e8f" />
+        <targetEnds>
+          <association Id="9941ffa5-ec3c-41a2-9433-bae302e2a317" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Browse website" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="25529417-4d70-4e4f-9448-cdec25ad26cf" LastKnownName="Browse shirts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca2332b2-fa11-4e6b-96a2-822c042ee3bc" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b4b040e-148b-4e44-a06b-6aa4f97609cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48a6aa38-06de-4f40-947b-4d1d452eb733" name="Browse website" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d79f39cc-5063-48f4-90a8-93b4eec0f796" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fdeb42fc-0b36-4be7-9495-35098a4ae537" />
+          </association>
+          <association Id="8c0c9d56-49fb-4498-9c5b-048802d8177f" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Pay for items" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8ad372ea-77a4-4737-afbb-c200de01ea25" LastKnownName="Pay for items" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fa9981f-90e4-4598-9fc9-59f95c9b4f70" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac9da536-cff4-40bb-a6f0-61e311c4a77e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9a68440-4d04-46cd-95dd-dc8a9df03c5d" name="Pay for items" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="177ba585-ae61-4d66-8e53-23571a4eb8cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c06a332-90f1-431f-a325-a806475b4a60" />
+          </association>
+          <association Id="389cdb60-6635-482f-bf26-05e2a7ea4015" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Browse ties" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c10d650-d04e-4498-9e4b-967005e4e26e" LastKnownName="Browse ties" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61948fc2-6251-4d93-b5ce-afd067d12997" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="96990381-5b91-437b-bda9-379f47a82ab4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43f3eaaf-ed5d-487a-9afe-e4654379c4be" name="Browse ties" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5c9b154-6b67-43d2-96c1-43ce0f0ceab3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d16359f7-b090-434a-8a0c-769d81e38c71" />
+          </association>
+          <association Id="11171686-9fa0-4499-acd6-29d9f4cd26ba" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Receive shirt" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d64f129c-12fd-4895-8257-d9d2eeded1f3" LastKnownName="Receive shirt" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98423f24-ed1c-4f21-aea0-2b468d20ca03" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dfb77560-912c-467d-a822-f3a7335472a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec7af112-12d4-407a-81b4-3699dadb80f5" name="Receive shirt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ab31855-27f2-4b92-b265-2065e1be174e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="20736450-7792-4b69-b446-06110c626b93" />
+          </association>
+          <association Id="ceda2b44-d295-4afc-8496-dd06515177a1" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Receive tie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6051f253-1442-4220-ae2e-812de34c34e9" LastKnownName="Receive tie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04d68ce3-5c27-48f6-98af-da4a322a155e" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0489a493-8a45-433d-96d4-7a19112ef7f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3f0d791-0fa7-4c66-a677-00fb64c8f04b" name="Receive tie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2939feb-461d-459d-abc4-3028c08d0a9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62e50576-f939-42e1-98ae-69c402083e65" />
+          </association>
+          <association Id="087bd540-831a-4cac-b7a2-fd71894fd013" isDerived="false" sourceEndRoleName="Buyer" targetEndRoleName="Place order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f5e79182-62bf-4831-9919-88fc6d0b3d11" LastKnownName="Place order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0972b7be-306c-45c7-835f-de294b841554" name="Buyer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d15c32a-1cbe-4c9a-8108-453d3e688ac3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23c0d815-f20a-4cfa-8d55-2f869ff074a1" name="Place order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="303d4a00-25f9-4109-b237-bc127e38d630" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2045ba3e-5fba-4480-bc40-67c087f43f6e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0d549d24-9068-41a8-a80a-035bb3220a09" name="Seller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6303bae-0788-4b55-93e9-151bcf934957" />
+        <targetEnds>
+          <association Id="92ea256a-bddc-4ce4-bf8b-96910f5fd8f0" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Receive payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9858df45-e794-4229-940b-e4ba4666ad61" LastKnownName="Receive payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7da8e43-aa3e-443a-8819-258f976665c0" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76cc5c80-04be-4ab9-871b-9bca4fc80a51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4c7ba6d-e383-4a66-a2bd-6b0d531e84f1" name="Receive payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0df13c18-c6b9-45fd-8f50-5483b91be7e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67a1dad8-156f-4c23-8ca2-5c5d4538134d" />
+          </association>
+          <association Id="490bcfbc-8aba-44f2-bd56-b05ee96efe3f" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Send item" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="73bef713-37b6-490d-88f1-a852083708ec" LastKnownName="Send item" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31c605c1-5fd2-42f4-b16a-c4c0e2f87509" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c761737-e22c-414a-81d8-862b04a62660" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf7d57a2-f756-40e2-8dd0-3fd39e535a51" name="Send item" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cca9cd39-71e5-4437-b811-c57f15ee26b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0fa4501-dd37-4860-982d-d4e7f3e26255" />
+          </association>
+          <association Id="63203163-bfc4-42c2-a9c4-fa9527439906" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Receive order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bdd04dbe-20f3-4d14-9998-f9bc2f7afd93" LastKnownName="Receive order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88be3158-77ad-40da-9fb6-9b2eeb69d6e7" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16d9891f-7e61-4d94-a0ef-2f73ef9609f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3c0e3dd-890a-4863-9d99-1fd485ae1832" name="Receive order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bc96d3f1-2a22-4ab1-98d1-f8e8e52665f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0396927e-c91d-4f21-8b40-a743198d0bd5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="25529417-4d70-4e4f-9448-cdec25ad26cf" name="Browse shirts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="194b04d3-5efc-4bb2-a7e8-15fb84c513b5" />
+        <additions>
+          <include Id="e0c1f993-4de4-4ade-a69a-3378c2b08526">
+            <useCaseMoniker Id="51f57788-273f-4bb9-bc1e-2bec9b98662c" LastKnownName="Add to cart" />
+            <elementDefinition Id="4f81e9f1-1f3a-4917-b566-166f3c2286a4" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="51f57788-273f-4bb9-bc1e-2bec9b98662c" name="Add to cart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3837e766-be89-4436-831b-72526afea305" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6051f253-1442-4220-ae2e-812de34c34e9" name="Receive tie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="810bdebf-3d3a-4409-9ab1-aa5edc9cc15c" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d64f129c-12fd-4895-8257-d9d2eeded1f3" name="Receive shirt" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8242d419-7eb8-4ec7-9e64-fd7538a036ce" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9858df45-e794-4229-940b-e4ba4666ad61" name="Receive payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8bf8afd0-1250-4f18-b751-d560e8b61ead" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8ad372ea-77a4-4737-afbb-c200de01ea25" name="Pay for items" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99e76428-bc77-4034-8f08-e508de43db0c" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9c10d650-d04e-4498-9e4b-967005e4e26e" name="Browse ties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e104fd4-2229-4cd4-80d1-4a30d836f634" />
+        <additions>
+          <include Id="4f9f132e-92de-4d02-8331-7c180d401b79">
+            <useCaseMoniker Id="51f57788-273f-4bb9-bc1e-2bec9b98662c" LastKnownName="Add to cart" />
+            <elementDefinition Id="44ed3358-034d-4055-aaef-d0598b1e17f5" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="73bef713-37b6-490d-88f1-a852083708ec" name="Send item" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d347ba40-8fb7-47fa-a2a4-6dc1138250c3" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bdd04dbe-20f3-4d14-9998-f9bc2f7afd93" name="Receive order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92c64245-98d0-4cac-a165-b20e4bae3599" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f5e79182-62bf-4831-9919-88fc6d0b3d11" name="Place order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b12851a-02d2-41b3-9b6a-08143cb358d8" />
+        <subjects>
+          <subsystemMoniker Id="1ddc66a1-672e-43e3-8bed-2a4329fe170e" LastKnownName="ShirtsAndTies Web Store" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5e4facca-aa10-42e2-8b30-cf3d5bede136" name="ShirtsAndTies.Modeling">
+    <elementDefinition Id="519ede89-76fe-40fe-ada5-d1ad730b81e9" />
+  </package>
+</useCaseModelRoot>
